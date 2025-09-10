@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
 /**
  * A funcao insere um 'newInterval' em uma lista de 'intervals' ja ordenada
  * e sem sobreposicao. A logica e dividida em tres partes:
@@ -61,10 +65,85 @@ int **insert(int **intervals, int intervalsSize, int *intervalsColSize,
 
   // Aloca e preenche o array com os tamanhos das colunas (sempre 2)
   *returnColumnSizes = malloc(*returnSize * sizeof(int));
-  for (i = 0; i < *returnSize; ++i)
-    (*returnColumnSizes)[i] = 2;
+  for (i = 0; i < *returnSize; ++i) (*returnColumnSizes)[i] = 2;
 
   // Otimizacao: realoca 'ans' para o tamanho exato, liberando memoria extra
   ans = realloc(ans, *returnSize * sizeof(int *));
   return ans;
+}
+
+/*
+Para compilar e executar:
+gcc nome_do_arquivo.c -o meu_programa.out
+./meu_programa.out testcase
+
+Formato do arquivo de teste:
+Uma unica linha contendo numeros inteiros separados por espacos.
+Os pares de numeros representam os intervalos. Os dois ultimos
+numeros na linha sao o 'newInterval'.
+Exemplo: 1 3 6 9 2 5
+Corresponde a: intervals = [[1,3],[6,9]], newInterval = [2,5]
+*/
+int main(int argc, char *argv[]) {
+  if (argc != 2) {
+    printf("Uso: %s <arquivo_de_teste>\n", argv[0]);
+    return 1;
+  }
+
+  FILE *file = fopen(argv[1], "r");
+  if (!file) {
+    printf("Erro ao abrir o arquivo.\n");
+    return 1;
+  }
+
+  int *all_nums = malloc(10 * sizeof(int));
+  int count = 0;
+  int capacity = 10;
+  while (fscanf(file, "%d", &all_nums[count]) == 1) {
+    count++;
+    if (count >= capacity) {
+      capacity *= 2;
+      all_nums = realloc(all_nums, capacity * sizeof(int));
+    }
+  }
+  fclose(file);
+
+  if (count < 2 || count % 2 != 0) {
+      printf("Formato de entrada invalido.\n");
+      free(all_nums);
+      return 1;
+  }
+  
+  int newInterval[] = {all_nums[count - 2], all_nums[count - 1]};
+  int intervalsSize = (count / 2) - 1;
+  int **intervals = malloc(intervalsSize * sizeof(int *));
+
+  for (int i = 0; i < intervalsSize; i++) {
+    intervals[i] = malloc(2 * sizeof(int));
+    intervals[i][0] = all_nums[i * 2];
+    intervals[i][1] = all_nums[i * 2 + 1];
+  }
+
+  int returnSize;
+  int *returnColumnSizes;
+  
+  int **result = insert(intervals, intervalsSize, NULL, newInterval, 2, &returnSize, &returnColumnSizes);
+
+for (int i = 0; i < returnSize; i++) {
+    printf("%d %d ", result[i][0], result[i][1]);
+  }
+  printf("\n");
+
+  free(all_nums);
+  for (int i = 0; i < intervalsSize; i++) {
+    free(intervals[i]);
+  }
+  free(intervals);
+  for (int i = 0; i < returnSize; i++) {
+    free(result[i]);
+  }
+  free(result);
+  free(returnColumnSizes);
+
+  return 0;
 }
