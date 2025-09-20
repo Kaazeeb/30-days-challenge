@@ -87,35 +87,35 @@ o algoritmo na linguagem de sua preferência.
         <tr>
             <td rowspan=3>Dia 1</td>
             <td rowspan=3>Arrays</td>
-            <td><a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/">26. Remove Duplicates from Sorted Array</a></td>
+            <td><a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/" target="_blank">26. Remove Duplicates from Sorted Array</a></td>
         </tr>
         <tr>
-            <td><a href="https://leetcode.com/problems/insert-interval/description/">57. Insert Interval</a></td>
+            <td><a href="https://leetcode.com/problems/insert-interval/description/" target="_blank">57. Insert Interval</a></td>
         </tr>
         <tr>
-            <td><a href="https://leetcode.com/problems/rotate-image/description/">48. Rotate Image</a></td>
+            <td><a href="https://leetcode.com/problems/rotate-image/description/" target="_blank">48. Rotate Image</a></td>
         </tr>
         <tr>
             <td rowspan=3>Dia 2</td>
             <td rowspan=3>Binary Search</td>
-            <td><a href="https://leetcode.com/problems/binary-search/description/">704. Binary Search</a></td>
+            <td><a href="https://leetcode.com/problems/binary-search/description/" target="_blank">704. Binary Search</a></td>
         </tr>
         <tr>
-            <td><a href="https://leetcode.com/problems/search-in-rotated-sorted-array/description/">33. Search in Rotated Sorted Array</a></td>
+            <td><a href="https://leetcode.com/problems/search-in-rotated-sorted-array/description/" target="_blank">33. Search in Rotated Sorted Array</a></td>
         </tr>
         <tr>
-            <td><a href="https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/">34. Find First and Last Position of Element in Sorted Array</a></td>
+            <td><a href="https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/" target="_blank">34. Find First and Last Position of Element in Sorted Array</a></td>
         </tr>
         <tr>
             <td rowspan=3>Dia 3</td>
             <td rowspan=3>Linked Lists</td>
-            <td><a href="https://leetcode.com/problems/middle-of-the-linked-list/description/">876. Middle of the Linked List</a></td>
+            <td><a href="https://leetcode.com/problems/middle-of-the-linked-list/description/" target="_blank">876. Middle of the Linked List</a></td>
         </tr>
         <tr>
-            <td><a href="https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/">19. Remove Nth Node From End of List</a></td>
+            <td><a href="https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/" target="_blank">19. Remove Nth Node From End of List</a></td>
         </tr>
         <tr>
-            <td><a href="https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/description/">430. Flatten a Multilevel Doubly Linked List</a></td>
+            <td><a href="https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/description/" target="_blank">430. Flatten a Multilevel Doubly Linked List</a></td>
         </tr>
         <tr>
             <td rowspan=3>Dia 4</td>
@@ -123,32 +123,32 @@ o algoritmo na linguagem de sua preferência.
             <td>Implemente o Selection Sort</td>
         </tr>
         <tr>
-            <td><a href="https://leetcode.com/problems/validate-ip-address/description/">468. Validate IP Address</a></td>
+            <td><a href="https://leetcode.com/problems/validate-ip-address/description/" target="_blank">468. Validate IP Address</a></td>
         </tr>
         <tr>
-            <td><a href="https://leetcode.com/problems/count-primes/description/">204. Count Primes</a></td>
+            <td><a href="https://leetcode.com/problems/count-primes/description/" target="_blank">204. Count Primes</a></td>
         </tr>
         <tr>
             <td rowspan=3>Dia 5</td>
             <td rowspan=3>Recursion</td>
-            <td><a href="https://leetcode.com/problems/powx-n/description/">50. Pow(x, n)</a></td>
+            <td><a href="https://leetcode.com/problems/powx-n/description/" target="_blank">50. Pow(x, n)</a></td>
         </tr>
         <tr>
-            <td><a href="https://leetcode.com/problems/find-the-winner-of-the-circular-game/description/">1823. Find the Winner of the Circular Game</a></td>
+            <td><a href="https://leetcode.com/problems/find-the-winner-of-the-circular-game/description/" target="_blank">1823. Find the Winner of the Circular Game</a></td>
         </tr>
         <tr>
-            <td><a href="https://leetcode.com/problems/decode-string/description/">394. Decode String</a></td>
+            <td><a href="https://leetcode.com/problems/decode-string/description/" target="_blank">394. Decode String</a></td>
         </tr>
         <tr>
             <td rowspan=3>Dia 6</td>
             <td rowspan=3>TEMA</td>
-            <td><a href="https://leetcode.com/problems/basic-calculator/description/">224. Basic Calculator</a></td>
+            <td><a href="https://leetcode.com/problems/basic-calculator/description/" target="_blank">224. Basic Calculator</a></td>
         </tr>
         <tr>
-            <td><a href="https://leetcode.com/problems/integer-to-english-words/description/">273. Integer to English Words</a></td>
+            <td><a href="https://leetcode.com/problems/integer-to-english-words/description/" target="_blank">273. Integer to English Words</a></td>
         </tr>
         <tr>
-            <td><a href="https://leetcode.com/problems/special-binary-string/description/">761. Special Binary String</a></td>
+            <td><a href="https://leetcode.com/problems/special-binary-string/description/" target="_blank">761. Special Binary String</a></td>
         </tr>
         <tr>
             <td rowspan=3>Dia 7</td>
